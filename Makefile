@@ -36,10 +36,11 @@
 #   - release-clean - cleans the binaries for all target platforms
 #   - dist-clean - cleans release packages for all target platforms
 #   - clean-all - cleans the build area and release packages
+# This repo is fork from hyperledger.
 
 PROJECT_NAME   = fabric-ca
-BASE_VERSION = 1.1.0
-PREV_VERSION = 1.1.0-rc1
+BASE_VERSION = 1.1.1
+PREV_VERSION = 1.1.0
 IS_RELEASE = false
 
 ARCH=$(shell uname -m)
