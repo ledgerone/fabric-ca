@@ -6,7 +6,7 @@
 #
 
 : ${TESTNAME:=ldap}
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 SCRIPTDIR="$FABRIC_CA/scripts/fvt"
 TESTDIR="/tmp/$TESTNAME"
 . $SCRIPTDIR/fabric-ca_utils

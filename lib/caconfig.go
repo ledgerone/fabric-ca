@@ -20,12 +20,12 @@ import (
 	"time"
 
 	"github.com/cloudflare/cfssl/config"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/dbutil"
-	"github.com/hyperledger/fabric-ca/lib/ldap"
-	"github.com/hyperledger/fabric-ca/lib/tls"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/dbutil"
+	"github.com/ledgerone/fabric-ca/lib/ldap"
+	"github.com/ledgerone/fabric-ca/lib/tls"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
 )
 
 const (

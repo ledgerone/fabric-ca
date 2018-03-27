@@ -29,12 +29,12 @@ import (
 	"github.com/cloudflare/cfssl/csr"
 	"github.com/cloudflare/cfssl/log"
 	"github.com/cloudflare/cfssl/signer"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	cspsigner "github.com/hyperledger/fabric/bccsp/signer"
-	"github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
+	cspsigner "github.com/ledgerone/fabric-ledgerone/bccsp/signer"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/utils"
 	"github.com/stretchr/testify/assert"
 )
 

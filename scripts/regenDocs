@@ -17,7 +17,7 @@ echo "Making docs..."
 # Command Line Flag Generation
 ######################################################################
 
-fabric_ca=$GOPATH/src/github.com/hyperledger/fabric-ca
+fabric_ca=$GOPATH/src/github.com/ledgerone/fabric-ca
 docsdir=$fabric_ca/docs/source
 export PATH=$PATH:$fabric_ca/bin
 

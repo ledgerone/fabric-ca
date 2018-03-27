@@ -20,9 +20,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
 )
 
 func getIdentity() *Identity {

@@ -29,11 +29,11 @@ import (
 	"time"
 
 	"github.com/cloudflare/cfssl/csr"
-	"github.com/hyperledger/fabric-ca/api"
-	. "github.com/hyperledger/fabric-ca/lib"
-	"github.com/hyperledger/fabric-ca/lib/tls"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/common/attrmgr"
+	"github.com/ledgerone/fabric-ca/api"
+	. "github.com/ledgerone/fabric-ca/lib"
+	"github.com/ledgerone/fabric-ca/lib/tls"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/common/attrmgr"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -129,6 +129,7 @@ func TestCLIClientInit(t *testing.T) {
 	}()
 
 	client.Config.MSPDir = strings.Repeat("a", 260)
+	t.Log("test 1")
 	err = client.CheckEnrollment()
 	t.Logf("Client CheckEnrollment() error %v", err)
 	if err == nil {
@@ -255,6 +256,7 @@ func testRegister(c *Client, t *testing.T) {
 		Secret: "adminpw",
 	}
 
+	t.Log("test 2")
 	err := c.CheckEnrollment()
 	if err == nil {
 		t.Fatalf("testRegister check enrollment should have failed - client not enrolled")
@@ -278,6 +280,7 @@ func testRegister(c *Client, t *testing.T) {
 		assert.True(t, int(d.Hours()) == 8760, "Expecting 8760 but found %f", d.Hours())
 	}
 
+	t.Log("test 3")
 	err = c.CheckEnrollment()
 	if err != nil {
 		t.Fatalf("testRegister failed to check enrollment: %s", err)
@@ -455,7 +458,7 @@ func testEnrollIncorrectPassword(c *Client, t *testing.T) {
 		Name:   "admin",
 		Secret: "incorrect",
 	}
-
+	t.Log("testEnrollIncorrectPassword")
 	_, err := c.Enroll(req)
 	if err == nil {
 		t.Error("Enroll with incorrect password passed but should have failed")
@@ -481,7 +484,7 @@ func testEnrollMiscFailures(c *Client, t *testing.T) {
 		Name:   "testUser",
 		Secret: "user1",
 	}
-
+	t.Log("testEnrollMiscFailures")
 	c.Config.URL = "http://localhost:["
 	_, err := c.Enroll(req)
 	t.Logf("Client Enroll error %v", err)

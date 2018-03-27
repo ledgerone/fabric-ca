@@ -1,7 +1,7 @@
 #!/bin/bash
 
 : ${TESTCASE:=gencsr}
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 SCRIPTDIR="$FABRIC_CA/scripts/fvt"
 CA_CFG_PATH="/tmp/$TESTCASE"
 ADMINUSER="admin"

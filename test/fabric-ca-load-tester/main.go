@@ -29,8 +29,8 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib"
 )
 
 // IdentityType represents type of identity in the fabric

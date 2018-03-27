@@ -61,7 +61,7 @@ PGVER=9.5
 endif
 
 BASEIMAGE_RELEASE = 0.4.6
-PKGNAME = github.com/hyperledger/$(PROJECT_NAME)
+PKGNAME = github.com/ledgerone/$(PROJECT_NAME)
 
 METADATA_VAR = Version=$(PROJECT_VERSION)
 
@@ -148,8 +148,7 @@ build/image/%/$(DUMMY): Makefile build/image/%/payload
 	docker tag $(DOCKER_NAME) $(DOCKER_NAME):$(DOCKER_TAG)
 	@touch $@
 
-build/image/fabric-ca/payload: \
-	build/docker/bin/fabric-ca-client \
+build/image/fabric-ca/payload: build/docker/bin/fabric-ca-client \
 	build/docker/bin/fabric-ca-server \
 	build/fabric-ca.tar.bz2
 build/image/fabric-ca-fvt/payload: \
@@ -183,12 +182,12 @@ bench: checks fabric-ca-server fabric-ca-client
 	@scripts/run_benchmarks
 
 # Runs benchmarks in the specified package with cpu profiling
-# e.g. make bench-cpu pkg=github.com/hyperledger/fabric-ca/lib
+# e.g. make bench-cpu pkg=github.com/ledgerone/fabric-ca/lib
 bench-cpu: checks fabric-ca-server fabric-ca-client
 	@scripts/run_benchmarks -C -P $(pkg)
 
 # Runs benchmarks in the specified package with memory profiling
-# e.g. make bench-mem pkg=github.com/hyperledger/fabric-ca/lib
+# e.g. make bench-mem pkg=github.com/ledgerone/fabric-ca/lib
 bench-mem: checks fabric-ca-server fabric-ca-client
 	@scripts/run_benchmarks -M -P $(pkg)
 
@@ -210,7 +209,7 @@ bench-clean:
 container-tests: docker
 
 load-test: docker-clean docker-fvt
-	@docker run -p 8888:8888 -p 8054:8054 -v $(shell pwd):/opt/gopath/src/github.com/hyperledger/fabric-ca -e FABRIC_CA_SERVER_PROFILE_PORT=8054 --name loadTest -td hyperledger/fabric-ca-fvt test/fabric-ca-load-tester/launchServer.sh 3
+	@docker run -p 8888:8888 -p 8054:8054 -v $(shell pwd):/opt/gopath/src/github.com/ledgerone/fabric-ca -e FABRIC_CA_SERVER_PROFILE_PORT=8054 --name loadTest -td hyperledger/fabric-ca-fvt test/fabric-ca-load-tester/launchServer.sh 3
 	@test/fabric-ca-load-tester/runLoad.sh -B
 	@docker kill loadTest
 
@@ -218,7 +217,7 @@ fvt-tests:
 	@scripts/run_fvt_tests
 
 ci-tests: docker-clean docker-fvt unit-tests docs
-	@docker run -v $(shell pwd):/opt/gopath/src/github.com/hyperledger/fabric-ca hyperledger/fabric-ca-fvt
+	@docker run -v $(shell pwd):/opt/gopath/src/github.com/ledgerone/fabric-ca hyperledger/fabric-ca-fvt
 
 %-docker-clean:
 	$(eval TARGET = ${patsubst %-docker-clean,%,${@}})

@@ -30,9 +30,9 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/spi"
-	"github.com/hyperledger/fabric-ca/util"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/spi"
+	"github.com/ledgerone/fabric-ca/util"
 	"github.com/spf13/viper"
 )
 

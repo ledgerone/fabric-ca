@@ -21,4 +21,4 @@ none
 
 Change Log
 ----------
-https://github.com/hyperledger/fabric-ca/blob/master/CHANGELOG.md#v102
+https://github.com/ledgerone/fabric-ca/blob/master/CHANGELOG.md#v102

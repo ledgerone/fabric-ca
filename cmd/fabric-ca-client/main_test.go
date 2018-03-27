@@ -36,17 +36,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric-ca/lib/spi"
+	"github.com/ledgerone/fabric-ca/lib/spi"
 
 	"github.com/cloudflare/cfssl/csr"
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib"
-	"github.com/hyperledger/fabric-ca/lib/attr"
-	"github.com/hyperledger/fabric-ca/lib/dbutil"
-	"github.com/hyperledger/fabric-ca/lib/metadata"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/common/attrmgr"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib"
+	"github.com/ledgerone/fabric-ca/lib/attr"
+	"github.com/ledgerone/fabric-ca/lib/dbutil"
+	"github.com/ledgerone/fabric-ca/lib/metadata"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/common/attrmgr"
 	"github.com/stretchr/testify/assert"
 )
 

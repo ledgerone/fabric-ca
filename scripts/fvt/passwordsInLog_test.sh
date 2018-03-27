@@ -115,7 +115,7 @@ function testIntermediateCa() {
 RC=0
 : ${TESTCASE:="passwordsInLog"}
 TESTDIR="/tmp/$TESTCASE"
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 SCRIPTDIR="$FABRIC_CA/scripts/fvt"
 . $SCRIPTDIR/fabric-ca_utils
 export CA_CFG_PATH="$TESTDIR"

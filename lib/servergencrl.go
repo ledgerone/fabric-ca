@@ -27,8 +27,8 @@ import (
 
 	"github.com/cloudflare/cfssl/crl"
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
 	"github.com/pkg/errors"
 )
 

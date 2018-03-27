@@ -45,7 +45,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
 	"github.com/spf13/viper"
 	"golang.org/x/crypto/ocsp"
 )

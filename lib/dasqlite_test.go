@@ -22,11 +22,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hyperledger/fabric-ca/api"
-	. "github.com/hyperledger/fabric-ca/lib"
-	"github.com/hyperledger/fabric-ca/lib/dbutil"
-	"github.com/hyperledger/fabric-ca/lib/spi"
 	"github.com/jmoiron/sqlx"
+	"github.com/ledgerone/fabric-ca/api"
+	. "github.com/ledgerone/fabric-ca/lib"
+	"github.com/ledgerone/fabric-ca/lib/dbutil"
+	"github.com/ledgerone/fabric-ca/lib/spi"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/stretchr/testify/assert"
 )

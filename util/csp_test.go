@@ -23,10 +23,10 @@ import (
 	"testing"
 
 	"github.com/cloudflare/cfssl/csr"
-	. "github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric-ca/util/mocks"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
+	. "github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ca/util/mocks"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
 	"github.com/stretchr/testify/assert"
 )
 

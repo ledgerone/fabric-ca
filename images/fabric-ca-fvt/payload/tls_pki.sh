@@ -1,5 +1,5 @@
 #!/bin/bash
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 SCRIPTDIR="/etc/hyperledger/fabric-ca"
 export HOME=$SCRIPTDIR
 PKI="$SCRIPTDIR/pki"

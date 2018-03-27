@@ -12,7 +12,7 @@
 export LFID=YOUR-LINUX-FOUNDATION-ID
 export REPO=fabric-ca
 
-export PROJECT=github.com/hyperledger
+export PROJECT=github.com/ledgerone
 export GERRIT=gerrit.hyperledger.org
 export GERRIT_ADDR=$GERRIT:29418
 

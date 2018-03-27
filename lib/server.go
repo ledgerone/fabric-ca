@@ -39,11 +39,11 @@ import (
 	"github.com/cloudflare/cfssl/revoke"
 	"github.com/cloudflare/cfssl/signer"
 	gmux "github.com/gorilla/mux"
-	"github.com/hyperledger/fabric-ca/lib/attr"
-	"github.com/hyperledger/fabric-ca/lib/dbutil"
-	"github.com/hyperledger/fabric-ca/lib/metadata"
-	stls "github.com/hyperledger/fabric-ca/lib/tls"
-	"github.com/hyperledger/fabric-ca/util"
+	"github.com/ledgerone/fabric-ca/lib/attr"
+	"github.com/ledgerone/fabric-ca/lib/dbutil"
+	"github.com/ledgerone/fabric-ca/lib/metadata"
+	stls "github.com/ledgerone/fabric-ca/lib/tls"
+	"github.com/ledgerone/fabric-ca/util"
 	"github.com/spf13/viper"
 )
 

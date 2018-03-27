@@ -31,11 +31,11 @@ import (
 	"github.com/cloudflare/cfssl/revoke"
 	"github.com/cloudflare/cfssl/signer"
 	gmux "github.com/gorilla/mux"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/attr"
-	"github.com/hyperledger/fabric-ca/lib/spi"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/common/attrmgr"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/attr"
+	"github.com/ledgerone/fabric-ca/lib/spi"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/common/attrmgr"
 	"github.com/pkg/errors"
 )
 

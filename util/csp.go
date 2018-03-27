@@ -39,10 +39,10 @@ import (
 	_ "github.com/cloudflare/cfssl/ocsp" // for ocspSignerFromConfig
 	"github.com/cloudflare/cfssl/signer"
 	"github.com/cloudflare/cfssl/signer/local"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	cspsigner "github.com/hyperledger/fabric/bccsp/signer"
-	"github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
+	cspsigner "github.com/ledgerone/fabric-ledgerone/bccsp/signer"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/utils"
 )
 
 // GetDefaultBCCSP returns the default BCCSP

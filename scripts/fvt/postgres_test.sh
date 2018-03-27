@@ -6,7 +6,7 @@
 #
 
 TESTCASE="postgres"
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 FABRIC_CAEXEC="$FABRIC_CA/bin/fabric-ca"
 SCRIPTDIR="$FABRIC_CA/scripts/fvt"
 . $SCRIPTDIR/fabric-ca_utils

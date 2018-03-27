@@ -20,13 +20,13 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/hyperledger/fabric-ca/lib/attr"
+	"github.com/ledgerone/fabric-ca/lib/attr"
 
 	"github.com/pkg/errors"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/spi"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/spi"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/crypto/ocsp"
 

@@ -15,7 +15,7 @@ Hyperledger Fabric CA consists of both a server and a client component as
 described later in this document.
 
 For developers interested in contributing to Hyperledger Fabric CA, see the
-`Fabric CA repository <https://github.com/hyperledger/fabric-ca>`__ for more
+`Fabric CA repository <https://github.com/ledgerone/fabric-ca>`__ for more
 information.
 
 
@@ -136,7 +136,7 @@ in $GOPATH/bin.
 
 .. code:: bash
 
-    go get -u github.com/hyperledger/fabric-ca/cmd/...
+    go get -u github.com/ledgerone/fabric-ca/cmd/...
 
 Note: If you have already cloned the fabric-ca repository, make sure you are on the
 master branch before running the 'go get' command above. Otherwise, you might see the
@@ -144,7 +144,7 @@ following error:
 
 ::
 
-    <gopath>/src/github.com/hyperledger/fabric-ca; git pull --ff-only
+    <gopath>/src/github.com/ledgerone/fabric-ca; git pull --ff-only
     There is no tracking information for the current branch.
     Please specify which branch you want to merge with.
     See git-pull(1) for details.
@@ -155,7 +155,7 @@ following error:
 
         git branch --set-upstream-to=<remote>/<branch> tlsdoc
 
-    package github.com/hyperledger/fabric-ca/cmd/fabric-ca-client: exit status 1
+    package github.com/ledgerone/fabric-ca/cmd/fabric-ca-client: exit status 1
 
 Start Server Natively
 ~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +184,7 @@ Go to: https://hub.docker.com/r/hyperledger/fabric-ca/tags/
 Find the tag that matches the architecture and version of fabric-ca
 that you want to pull.
 
-Navigate to `$GOPATH/src/github.com/hyperledger/fabric-ca/docker/server`
+Navigate to `$GOPATH/src/github.com/ledgerone/fabric-ca/docker/server`
 and open up docker-compose.yml in an editor.
 
 Change the `image` line to reflect the tag you found previously. The file
@@ -221,7 +221,7 @@ You can build and start the server via docker-compose as shown below.
 
 .. code:: bash
 
-    cd $GOPATH/src/github.com/hyperledger/fabric-ca
+    cd $GOPATH/src/github.com/ledgerone/fabric-ca
     make docker
     cd docker/server
     docker-compose up -d
@@ -231,7 +231,7 @@ the fabric-ca-client.
 
 .. code:: bash
 
-    # cd $GOPATH/src/github.com/hyperledger/fabric-ca
+    # cd $GOPATH/src/github.com/ledgerone/fabric-ca
     # FABRIC_CA_DYNAMIC_LINK=true make docker
     # cd docker/server
     # docker-compose up -d
@@ -1578,7 +1578,7 @@ before 2017-09-21T16:39:57-08:00, and that expire after 2017-09-13T16:39:57-08:0
     export FABRIC_CA_CLIENT_HOME=~/clientconfig
     fabric-ca-client gencrl --caname "" --expireafter 2017-09-13T16:39:57-08:00 --expirebefore 2018-09-13T16:39:57-08:00  --revokedafter 2017-09-13T16:39:57-08:00 --revokedbefore 2017-09-21T16:39:57-08:00 -M ~/msp
 
-The `fabric-samples/fabric-ca <https://github.com/hyperledger/fabric-samples/blob/master/fabric-ca/scripts/run-fabric.sh>`_
+The `fabric-samples/fabric-ca <https://github.com/ledgerone/fabric-samples/blob/master/fabric-ca/scripts/run-fabric.sh>`_
 sample demonstrates how to generate a CRL that contains certificate of a revoked user and update the channel
 msp. It will then demonstrate that querying the channel using the revoked user credentials will result
 in an authorization error.
@@ -1684,10 +1684,10 @@ value of the affiliation (which is 'org1') must be the same in both the
     fabric-ca-client register --id.name user1 --id.secret user1pw --id.type user --id.affiliation org1 --id.attrs 'hf.Affiliation=org1:ecert'
 
 For information on the chaincode library API for Attribute-Based Access Control,
-see https://github.com/hyperledger/fabric/tree/release/core/chaincode/lib/cid/README.md
+see https://github.com/ledgerone/fabric-ledgerone/tree/release/core/chaincode/lib/cid/README.md
 
 For an end-to-end sample which demonstrates Attribute-Based Access Control and more,
-see https://github.com/hyperledger/fabric-samples/tree/release/fabric-ca/README.md
+see https://github.com/ledgerone/fabric-samples/tree/release/fabric-ca/README.md
 
 Dynamic Server Configuration Update
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

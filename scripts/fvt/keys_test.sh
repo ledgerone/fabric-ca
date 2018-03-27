@@ -7,7 +7,7 @@
 
 : ${TESTCASE="keys"}
 CA_CFG_PATH="/tmp/keys"
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 TESTDATA="$FABRIC_CA/testdata"
 SCRIPTDIR="$FABRIC_CA/scripts/fvt"
 EE_KEY="/tmp/keys/admin/msp/keystore/*_sk"

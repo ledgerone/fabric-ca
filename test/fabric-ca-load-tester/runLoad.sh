@@ -11,7 +11,7 @@
 #
 # When run with -B option, it will build the load driver and then runs it.
 
-pushd $GOPATH/src/github.com/hyperledger/fabric-ca/test/fabric-ca-load-tester
+pushd $GOPATH/src/github.com/ledgerone/fabric-ca/test/fabric-ca-load-tester
 if [ "$1" == "-B" ]; then
   echo "Building fabric-ca-load-tester..."
   if [ "$(uname)" == "Darwin" ]; then

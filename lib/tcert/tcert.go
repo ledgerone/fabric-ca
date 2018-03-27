@@ -32,10 +32,10 @@ import (
 	"strconv"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
-	cspsigner "github.com/hyperledger/fabric/bccsp/signer"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
+	cspsigner "github.com/ledgerone/fabric-ledgerone/bccsp/signer"
 )
 
 var (

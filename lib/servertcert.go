@@ -17,9 +17,9 @@ limitations under the License.
 package lib
 
 import (
-	"github.com/hyperledger/fabric-ca/api"
-	tcert "github.com/hyperledger/fabric-ca/lib/tcert"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/ledgerone/fabric-ca/api"
+	tcert "github.com/ledgerone/fabric-ca/lib/tcert"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
 	"github.com/pkg/errors"
 )
 

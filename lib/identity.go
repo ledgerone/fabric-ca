@@ -25,9 +25,9 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
 )
 
 func newIdentity(client *Client, name string, key bccsp.Key, cert []byte) *Identity {

@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
 )
 
 func TestTCertWithoutAttribute(t *testing.T) {

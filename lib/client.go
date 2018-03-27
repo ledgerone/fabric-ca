@@ -34,11 +34,11 @@ import (
 	cfsslapi "github.com/cloudflare/cfssl/api"
 	"github.com/cloudflare/cfssl/csr"
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/streamer"
-	"github.com/hyperledger/fabric-ca/lib/tls"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/streamer"
+	"github.com/ledgerone/fabric-ca/lib/tls"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
 	"github.com/mitchellh/mapstructure"
 )
 
@@ -560,7 +560,8 @@ func (c *Client) CheckEnrollment() error {
 			return nil
 		}
 	}
-	return errors.New("Enrollment information does not exist. Please execute enroll command first. Example: fabric-ca-client enroll -u http://user:userpw@serverAddr:serverPort")
+
+	return errors.Errorf("Enrollment information does not exist. Please execute enroll command first. Example: fabric-ca-client enroll -u http://user:userpw@serverAddr:serverPort, s%, %s", c.certFile, c.keyFile)
 }
 
 func newCfsslBasicKeyRequest(bkr *api.BasicKeyRequest) *csr.BasicKeyRequest {

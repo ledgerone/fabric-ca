@@ -27,10 +27,10 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib"
-	"github.com/hyperledger/fabric-ca/lib/metadata"
-	"github.com/hyperledger/fabric-ca/util"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib"
+	"github.com/ledgerone/fabric-ca/lib/metadata"
+	"github.com/ledgerone/fabric-ca/util"
 	"github.com/stretchr/testify/assert"
 )
 

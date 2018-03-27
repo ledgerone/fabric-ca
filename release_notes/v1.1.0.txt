@@ -35,4 +35,4 @@ none
 
 Change Log
 ----------
-https://github.com/hyperledger/fabric-ca/blob/master/CHANGELOG.md#v110
+https://github.com/ledgerone/fabric-ca/blob/master/CHANGELOG.md#v110

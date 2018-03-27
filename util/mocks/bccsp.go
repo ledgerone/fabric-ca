@@ -19,7 +19,7 @@ package mocks
 import (
 	"hash"
 
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
 	"github.com/stretchr/testify/mock"
 )
 

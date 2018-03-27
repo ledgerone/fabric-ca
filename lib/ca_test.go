@@ -25,11 +25,11 @@ import (
 	"testing"
 
 	"github.com/cloudflare/cfssl/csr"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/dbutil"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	"github.com/hyperledger/fabric/bccsp/pkcs11"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/dbutil"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/pkcs11"
 	"github.com/stretchr/testify/assert"
 )
 

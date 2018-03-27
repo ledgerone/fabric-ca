@@ -21,8 +21,8 @@ limitations under the License.
 package spi
 
 import (
-	"github.com/hyperledger/fabric-ca/api"
 	"github.com/jmoiron/sqlx"
+	"github.com/ledgerone/fabric-ca/api"
 )
 
 // UserInfo contains information about a user

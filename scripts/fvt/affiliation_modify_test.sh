@@ -3,7 +3,7 @@
 dbDriver=postgres
 
 : ${TESTCASE="aff_modify"}
-FABRIC_CA="$GOPATH/src/github.com/hyperledger/fabric-ca"
+FABRIC_CA="$GOPATH/src/github.com/ledgerone/fabric-ca"
 SCRIPTDIR="$FABRIC_CA/scripts/fvt"
 . $SCRIPTDIR/fabric-ca_utils
 TESTDIR=/tmp/$TESTCASE

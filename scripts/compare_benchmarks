@@ -54,7 +54,7 @@ if test $? -gt 0; then
    exit 1
 fi
 
-$GOPATH/src/github.com/hyperledger/fabric-ca/scripts/run_benchmarks
+$GOPATH/src/github.com/ledgerone/fabric-ca/scripts/run_benchmarks
 if test $? -eq 0; then
    compareBenchmarks
    exit $?

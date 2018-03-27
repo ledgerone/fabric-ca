@@ -21,4 +21,4 @@ https://jira.hyperledger.org/browse/FAB-4841
 
 Change Log
 ----------
-https://github.com/hyperledger/fabric-ca/blob/master/CHANGELOG.md#v100-rc1
+https://github.com/ledgerone/fabric-ca/blob/master/CHANGELOG.md#v100-rc1

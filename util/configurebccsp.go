@@ -23,7 +23,7 @@ import (
 	"strings"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
 	"github.com/pkg/errors"
 )
 

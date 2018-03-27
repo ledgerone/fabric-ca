@@ -29,11 +29,11 @@ import (
 
 	"github.com/Knetic/govaluate"
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/lib/spi"
-	ctls "github.com/hyperledger/fabric-ca/lib/tls"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/lib/spi"
+	ctls "github.com/ledgerone/fabric-ca/lib/tls"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
 	ldap "gopkg.in/ldap.v2"
 )
 

@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/bccsp/factory"
 )
 
 func TestMain(m *testing.M) {

@@ -21,9 +21,9 @@ The following are guidelines to follow when contributing:
 
 1. See the general information about [contributing to fabric](http://hyperledger-fabric.readthedocs.io/en/latest/CONTRIBUTING.html).
 
-2. To set up your development environment for doing common development tasks, see [bash_profile](https://github.com/hyperledger/fabric-ca/blob/master/scripts/bash_profile).  This contains variables and functions which can be copied directly into your `.bash_profile` file.  Even if you do not use bash, you should still find the functions instructive.  For example:
+2. To set up your development environment for doing common development tasks, see [bash_profile](https://github.com/ledgerone/fabric-ca/blob/master/scripts/bash_profile).  This contains variables and functions which can be copied directly into your `.bash_profile` file.  Even if you do not use bash, you should still find the functions instructive.  For example:
    a. **clone** - pulls the latest fabric-ca code from gerrit and places it based on your GOPATH setting
-   b. **cdr** - cd to the fabric-ca repository root, which is equivalent to "cd $GOPATH/src/github.com/hyperledger/fabric-ca"
+   b. **cdr** - cd to the fabric-ca repository root, which is equivalent to "cd $GOPATH/src/github.com/ledgerone/fabric-ca"
    c. **gencov** - generates a test coverage report
 
 3. To run the unit tests manually:
@@ -74,7 +74,7 @@ The following are guidelines to follow when contributing:
 Fabric CA server can be profiled two ways, namely, using benchmarks and by retrieving profiling data from the server (at /debug/pprof/ endpoint) while running load.
 
 ### Benchmarks
-You can profile the benchmarks by running `make bench-cpu` or `make bench-mem` commands. You can profile benchmarks in one package or all the packages using these make targets. For example, to profile benchmarks in the *lib* package, run: `make bench-cpu pkg=github.com/hyperledger/fabric-ca/lib`. This will create **bench-cpu.prof**, **lib.test** and **bench** files in the *lib* folder. The **bench** file will contain benchmark stats: bytes/operation, allocations/operation and nanoseconds/operation. **lib.test** file is the executable and **bench-cpu.prof** contains cpu profile information. To analyze the profile, run: `go tool pprof lib.test bench-cpu.prof`. Similarly, you can run `make bench-mem pkg=github.com/hyperledger/fabric-ca/lib` to perform memory profiling of the benchmarks in the *lib* package. The **bench-mem.prof** file contains memory profile information.
+You can profile the benchmarks by running `make bench-cpu` or `make bench-mem` commands. You can profile benchmarks in one package or all the packages using these make targets. For example, to profile benchmarks in the *lib* package, run: `make bench-cpu pkg=github.com/ledgerone/fabric-ca/lib`. This will create **bench-cpu.prof**, **lib.test** and **bench** files in the *lib* folder. The **bench** file will contain benchmark stats: bytes/operation, allocations/operation and nanoseconds/operation. **lib.test** file is the executable and **bench-cpu.prof** contains cpu profile information. To analyze the profile, run: `go tool pprof lib.test bench-cpu.prof`. Similarly, you can run `make bench-mem pkg=github.com/ledgerone/fabric-ca/lib` to perform memory profiling of the benchmarks in the *lib* package. The **bench-mem.prof** file contains memory profile information.
 
 If you run `make bench-cpu` or `make bench-mem` without *pkg* variable, benchmarks in each package are run with cpu or memory profiling. So, executable, benchmark output, and profile info files are created in each package folder. You need to analyze these profiles separately.
 
@@ -84,7 +84,7 @@ variable to a valid, available port number and start the server. The server will
 
 You can start the server in the FVT image by running following docker command from the fabric-ca root directory:
 
-`docker run -p 8888:8888 -p 8054:8054 -v $PWD:/opt/gopath/src/github.com/hyperledger/fabric-ca -e FABRIC_CA_SERVER_PROFILE_PORT=8054 --name loadTest -td hyperledger/fabric-ca-fvt test/fabric-ca-load-tester/launchServer.sh 1`
+`docker run -p 8888:8888 -p 8054:8054 -v $PWD:/opt/gopath/src/github.com/ledgerone/fabric-ca -e FABRIC_CA_SERVER_PROFILE_PORT=8054 --name loadTest -td hyperledger/fabric-ca-fvt test/fabric-ca-load-tester/launchServer.sh 1`
 
 Then start the load by running `/test/fabric-ca-load-tester/runLoad.sh -B`
 
@@ -128,7 +128,7 @@ See [FVT tests](scripts/fvt/README.md) for information on functional verificatio
 Following are the steps to update cfssl package using version 1.0.8 of govendor tool.
 
 * Remove cfssl from vendor folder
-   * cd $GOPATH/src/github.com/hyperledger/fabric-ca/vendor
+   * cd $GOPATH/src/github.com/ledgerone/fabric-ca/vendor
    * govendor remove github.com/cloudflare/cfssl/...
    * rm -rf github.com/cloudflare/cfssl/
 
@@ -139,7 +139,7 @@ Following are the steps to update cfssl package using version 1.0.8 of govendor 
    * git clone https://github.com/cloudflare/cfssl.git
 
 * Add cfssl from $GOPATH to the vendor folder
-   * cd $GOPATH/src/github.com/hyperledger/fabric-ca/vendor
+   * cd $GOPATH/src/github.com/ledgerone/fabric-ca/vendor
    * govendor add github.com/cloudflare/cfssl/^
    * You can optionally specify revision or tag to add a particular revision of code to the vendor folder
       * govendor add github.com/cloudflare/cfssl/^@abc12032

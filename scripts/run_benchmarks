@@ -73,9 +73,9 @@ while getopts "hRCMP:" option; do
 done
 
 BENCHMARK_FILE_NAME=bench.results
-FCA=$GOPATH/src/github.com/hyperledger/fabric-ca
+FCA=$GOPATH/src/github.com/ledgerone/fabric-ca
 export PATH=$PATH:$GOPATH/bin
-PKGS=`go list github.com/hyperledger/fabric-ca/... | grep -Ev '/vendor/|/api|/mocks|/dbutil|/ldap|/test/fabric-ca-load-tester'`
+PKGS=`go list github.com/ledgerone/fabric-ca/... | grep -Ev '/vendor/|/api|/mocks|/dbutil|/ldap|/test/fabric-ca-load-tester'`
 if test -n "$PACKAGE_NAME"; then
   PKGS=$PACKAGE_NAME
 fi

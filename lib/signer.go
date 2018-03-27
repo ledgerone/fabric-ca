@@ -21,10 +21,10 @@ import (
 	"fmt"
 
 	"github.com/cloudflare/cfssl/log"
-	"github.com/hyperledger/fabric-ca/api"
-	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/common/attrmgr"
+	"github.com/ledgerone/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/util"
+	"github.com/ledgerone/fabric-ledgerone/bccsp"
+	"github.com/ledgerone/fabric-ledgerone/common/attrmgr"
 )
 
 func newSigner(key bccsp.Key, cert []byte, id *Identity) *Signer {

@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hyperledger/fabric-ca/lib/dbutil"
+	"github.com/ledgerone/fabric-ca/lib/dbutil"
 	"github.com/pkg/errors"
 )
 

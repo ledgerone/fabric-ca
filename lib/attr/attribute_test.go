@@ -19,7 +19,7 @@ package attr
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric-ca/api"
+	"github.com/ledgerone/fabric-ca/api"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
